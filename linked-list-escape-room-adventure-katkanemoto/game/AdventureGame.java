@@ -50,7 +50,9 @@ public class AdventureGame {
 
             if (currentScene.getSceneId() == 5) {
                 handleFinalRoom();
+                
                 break;
+                
             }
 
             if (currentScene.getItem() != null) {

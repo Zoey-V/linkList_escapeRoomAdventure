@@ -60,7 +60,7 @@ public class GameGUI extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 570, 511);
 		contentPane = new JPanel();
-		contentPane.setBackground(Color.ORANGE);
+		contentPane.setBackground(Color.GREEN);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		setContentPane(contentPane);
@@ -175,8 +175,8 @@ public class GameGUI extends JFrame {
 	public void updateSceneDisplay() {
 	    //Scene scene = game.getCurrentScene();
 
-	    //lblTitle.setText(scene.getTitle());
-	    sceneDescription.setText(currentScence.getDescription());
+	    //lblTitle.setText(currentScene.getTitle());
+	    sceneDescription.setText(currentScence.getTitle() + "\n"+ currentScence.getDescription());
 	    System.out.println(currentScence);
 	    Item itemInRoom = currentScence.getItem();
 	    if(itemInRoom == null)
